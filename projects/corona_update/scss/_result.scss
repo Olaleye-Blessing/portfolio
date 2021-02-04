@@ -1,0 +1,113 @@
+.results {
+    // margin-top: 3rem;
+    margin-top: 4rem;
+//     width: 30rem;
+//     height: 30rem;
+    // background-color: red;
+    padding-bottom: 7rem;
+}
+
+.result {
+    // background-color: blue;
+    // opacity: 0.5;
+    // transition: opacity 2s linear;
+
+    &__name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // background-color: red;
+        h3 {
+            text-align: center;
+            font-size: 5rem;
+        }
+
+        figure {
+            // background-color: yellow;
+            width: 4rem;
+            height: 6rem;
+            margin-top: 3.5rem;
+            margin-left: 0.4rem;
+            // align-self: flex-end;
+
+            img {
+                max-width: 100%;
+                // object-fit: cover;
+            }
+        }
+        // figure {
+        //     width: 3rem;
+        //     height: 3rem;
+        // }
+    }
+
+    &__container {
+        // background-color: blue;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        gap: 3rem 4rem;
+        & > div {
+            background-color: var(--header-bg);
+            margin-top: 2rem;
+            text-align: center;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+            padding: 5rem 2rem;
+            font-size: 5rem;
+            border-radius: 1.5rem;
+            line-height: 1.2;
+            font-family: 'Playfair Display', serif;
+            font-weight: 500;
+            box-shadow: 0.1rem 0.1rem 0.1rem, -0.1rem -0.1rem 0.1rem;
+
+            &:hover {
+                box-shadow: 0 0 0.1rem;
+                transform: scale(1.04);
+            }
+    
+            span {
+                display: inline-block;
+                font-size: 2rem;
+                margin-top: 2.5rem;
+                font-family: 'Alegreya Sans', sans-serif;
+                font-weight: 700;
+            }
+        }
+    }
+
+
+
+    &__today {
+        span {
+            color: var(--recovered-color);
+        }
+    }
+    &__updated {
+        span {
+            color: var(--death-color);
+        }
+    }
+    &__death, &__cases {
+        span {
+            color: var(--death-color);
+        }
+    }
+    &__recovered {
+        span {
+            color: var(--recovered-color);
+        }
+    }
+    &__population {
+        span {
+            color: var(--population-color);
+        }
+    }
+    &__critical {
+        span {
+            color: var(--critical-color)
+        }
+    }
+
+}

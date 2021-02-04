@@ -1,0 +1,62 @@
+.result {
+    // background-color: rgb(241, 116, 116);
+    margin-top: 5rem;
+    padding-bottom: 6rem;
+    &__score {
+        font-size: 3rem;
+        letter-spacing: 0.1rem;
+
+        & > span {
+            display: inline-block;
+            font-size: 2rem;
+        }
+    }
+
+    &__correct {
+        // background-color: var(--right-color);
+        color: var(--right-color);
+    }
+
+    &__total {
+        // background-color: var(--result-color);
+        color: var(--result-color);
+    }
+
+    ol {
+        // padding-left: 1rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+        
+        li {
+            background-color: var(--header-bg);
+            padding: 3rem 2rem;
+            border-bottom: 0.2rem solid var(--result-color);
+            
+            p {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    &__ques {
+        
+        margin-bottom: 1rem;
+        &  > span {
+            color: red;
+            font-size: 3rem;
+            padding-right: 1rem;
+        }
+    }
+}
+
+.user__ans {
+    color: var(--right-color);
+}
+
+.real__ans {
+    color: var(--result-color);
+}
+
+.wrong {
+    color: var(--wrong-color);
+}

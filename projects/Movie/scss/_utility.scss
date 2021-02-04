@@ -1,0 +1,51 @@
+.width {
+    width: 100%;
+    max-width: 110rem;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+main.width {
+    max-width: 140rem;
+    max-width: 120rem;
+}
+
+.error {
+    background-color: #fff;
+    padding: 0.9rem 1.5rem;
+    font-size: 2rem;
+    color: red;
+    border-radius: 0.5rem;
+    width: max-content;
+}
+
+.loadmore {
+    // background-color: red;
+    // width: 32.8rem;
+    // height: 55rem;
+    flex: 1 1 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 6rem;
+    padding-right: 6rem;
+
+    button {
+        // width: 100%;
+        width: max-content;
+        display: block;
+        font-size: 2.5rem;
+        background-color: transparent;
+        border: none;
+        // background-color: purple;
+        color: red;
+        cursor: pointer;
+        transition: color 0.5s linear;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}

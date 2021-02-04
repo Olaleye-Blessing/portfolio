@@ -1,0 +1,185 @@
+html {
+  font-size: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+*:focus {
+  outline: 0.2rem solid green;
+}
+
+* {
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+/*  font-family: 'BioRhyme', serif;
+
+    font-family: 'Vollkorn', serif; */
+body {
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url(../../images/White-Flower-Wallpapers-HD.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3rem 1.5rem;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+h1 {
+  margin-bottom: 2.5rem;
+  font-family: 'BioRhyme', serif;
+  color: #fff;
+}
+
+.glass {
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 3rem;
+  width: 100%;
+  max-width: 80rem;
+  border: 0.2rem solid rgba(145, 155, 168, 0.9);
+  border-radius: 1.5rem;
+  -webkit-backdrop-filter: blur(1.7rem);
+          backdrop-filter: blur(1.7rem);
+  background-image: radial-gradient(at 50% 0%, rgba(0, 0, 0, 0.4), #fff5);
+  color: #111;
+}
+
+div.glass {
+  border: none;
+  -webkit-box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.4), -0.1rem -0.1rem 0.1rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.4), -0.1rem -0.1rem 0.1rem rgba(0, 0, 0, 0.4);
+}
+
+div.glass:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-box-shadow: 0.2rem 0.2rem 0.9rem rgba(0, 0, 0, 0.4), -0.2rem -0.2rem 0.9rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0.2rem 0.2rem 0.9rem rgba(0, 0, 0, 0.4), -0.2rem -0.2rem 0.9rem rgba(0, 0, 0, 0.4);
+}
+
+blockquote {
+  color: #111;
+  font-weight: 800;
+  font-family: 'Vollkorn', serif;
+  padding-bottom: 2rem;
+}
+
+small {
+  font-weight: 400;
+  position: absolute;
+  bottom: 2rem;
+  bottom: 0.6rem;
+  right: 2rem;
+  font-size: 2rem;
+  font-family: 'BioRhyme', serif;
+}
+
+button {
+  border: 0.1rem solid green;
+  background-color: transparent;
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.9rem;
+  position: absolute;
+  bottom: -6rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #a1f3affa;
+  color: green;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0.3rem solid red;
+  border: none;
+  border-radius: 0;
+}
+
+button:hover {
+  opacity: 0.6;
+}
+
+figure {
+  width: 4rem;
+  height: 4rem;
+}
+
+.social__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social__links > a {
+  color: inherit;
+  padding: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.social__links > a svg {
+  fill: currentColor;
+}
+
+.social__links > a:hover figure svg {
+  fill: green;
+}
+
+.social__links img, .social__links svg {
+  max-width: 100%;
+}
+
+.copy {
+  margin-top: 2rem;
+  text-align: center;
+  padding: 0.8rem 1.5rem;
+}
+
+footer {
+  margin-top: 8rem;
+  width: 100%;
+  max-width: 80rem;
+}

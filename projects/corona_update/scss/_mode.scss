@@ -1,0 +1,33 @@
+.mode {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    // gap: 0.3rem;
+    // padding: 0.4rem 0.1rem;
+    // background-color: yellow;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &__image-container {
+        // width: 1.7rem;
+        // height: 1.7rem;
+
+        svg {
+            // color: red;
+            color: var(--text-color);
+            max-width: 100%;
+            fill: var(--text-color);
+        }
+    }
+}
+
+.white .mode {
+    svg {
+        fill: none;
+    }
+}

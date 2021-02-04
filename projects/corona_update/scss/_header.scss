@@ -1,0 +1,29 @@
+.heading {
+    background-color: var(--header-bg);
+    // color: var(--main-color);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    // border: 2px solid green;
+
+    .logo {
+        font-size: 3rem;
+        letter-spacing: 0.2rem;
+
+        span {
+            font-size: 0.9rem;
+            letter-spacing: -0.3rem;
+        }
+    }
+
+    figure {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    p {
+        font-weight: 800;
+    }
+
+    div {
+        font-weight: 500;
+    }
+}

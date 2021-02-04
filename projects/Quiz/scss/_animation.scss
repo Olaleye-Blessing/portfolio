@@ -1,0 +1,37 @@
+@keyframes moving-bg-mobile {
+    0% {
+        background-color: yellow !important;
+        // font-size: 9px;
+        transform: translateX(100%);
+        opacity: 1;
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        background-color: pink !important;
+        // font-size: 39px;
+        transform: translateX(-220%);
+        // transform: translateX(-100vw);
+        opacity: 0;
+    }
+}
+
+@keyframes moving-bg-desktop {
+    0% {
+        background-color: yellow !important;
+        // font-size: 9px;
+        transform: translateX(100%);
+        opacity: 1;
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        background-color: pink !important;
+        // font-size: 39px;
+        transform: translateX(-140%);
+        // transform: translateX(-100vw);
+        opacity: 0;
+    }
+}

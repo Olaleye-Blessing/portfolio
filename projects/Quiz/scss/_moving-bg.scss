@@ -1,0 +1,36 @@
+.moving {
+    &-bg {
+        margin-top: 2rem;
+        // background-image: linear-gradient(120deg, var(--moving-bg-1), var(--moving-bg-2));
+        color: transparent;
+        color: var(--result-color);
+        // -webkit-background-clip: text;
+        // background-clip: text;
+        // -webkit-background-clip: text;
+    }
+
+    &-cont {
+        width: 100%;
+        max-width: 100rem;
+        margin-right: auto;
+        margin-left: auto;
+        overflow: hidden;
+
+        div {
+            font-size: 2rem;
+            white-space: nowrap;
+            text-overflow: clip;
+            animation: moving-bg-desktop 25s linear backwards infinite;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .moving {
+        &-cont {
+            div {
+                animation: moving-bg-mobile 22s linear backwards infinite;
+            }
+        }
+    }
+}

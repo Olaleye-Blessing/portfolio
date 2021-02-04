@@ -1,0 +1,33 @@
+.social__links {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    & > a {
+        flex: 0 1 4rem;
+        color: inherit;
+        padding: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+
+        svg {
+            fill: currentColor;
+        }
+
+        &:hover figure svg {
+            fill: green;
+        }
+    }
+    img,
+    svg {
+        max-width: 100%;
+    }
+}
+
+.copy {
+    margin-top: 2rem;
+    text-align: center;
+    padding: 0.8rem 1.5rem;
+}

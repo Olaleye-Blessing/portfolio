@@ -1,0 +1,17 @@
+header {
+    font-family: 'Fraunces', serif;
+    background-color: var(--header-bg);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.heading {
+    figure {
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+.mode {
+    cursor: pointer;
+}

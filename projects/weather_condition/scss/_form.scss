@@ -1,0 +1,61 @@
+form {
+    position: relative;
+    background-color: var(--pure-black);
+    color: var(--pure-white);
+    margin-top: 8rem;
+    border-bottom: 0.2rem solid var(--light-blue);
+    border-radius: 0.6rem;
+
+    input, button {
+        transition: all 0.3s linear;
+    }
+}
+
+.search-icon {
+    &:hover {
+        opacity: 0.7;
+    }
+    border: 0;
+    cursor: pointer;
+    border-radius: 0.6rem;
+    background-color: var(--search-bg);
+    position: absolute;
+    width: 3rem;
+    top: 0.6rem;
+    bottom: 0.5rem;
+    right: 0.6rem;
+    background-image: url(../../svg/001-magnifying-glass.svg);
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    background-position: center;
+    padding: 1.5rem 1.9rem;
+    z-index: 10;
+    transition: opacity 0.4s linear;
+}
+
+input[type="search"] {
+    z-index: 11;
+    position: relative;
+    border-radius: 0.6rem;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    width: calc(100% - 5rem);
+    height: 100%;
+    font-size: 120%;
+    font-family: inherit;
+    padding: 1.8rem 0 0.7rem 0.8rem;
+    background-color: transparent;
+    color: var(--pure-white);
+
+    &:focus {
+        border-right: 0;
+        box-shadow: none;
+    }
+}
+
+::placeholder {
+    color: var(--pure-white);
+    color: var(--search-bg);
+}

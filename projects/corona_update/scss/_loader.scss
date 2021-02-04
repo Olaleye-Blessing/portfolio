@@ -1,0 +1,110 @@
+.loader {
+    @include flex;
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--main-bg);
+    position: fixed;
+    z-index: 200;
+    transition: all 2s linear;
+}
+
+.ring {
+    height: 9.5rem;
+    width: 9.5rem;
+    border-radius: 50%;
+    position: relative;
+    @include flex;
+    font-weight: bolder;
+    box-shadow: 0.2rem 0.2rem 0.7rem #000;
+    transition: transform 2s linear;
+
+    &:hover {
+        box-shadow: -0.3rem -0.3rem 0.3rem red;
+        transform: scale(1.4);
+    }
+}
+
+.ring::after {
+    color: var(--text-color);
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border: 0.2rem solid;
+    border-top: transparent;
+    border-left: transparent;
+    border-radius: 50%;
+    @include flex;
+    content: "Welcome";   
+    animation: rot 2s linear infinite;
+}
+
+.ring_1 {
+    background-color: inherit;
+    z-index: 300;
+}
+
+.ring_2 {
+    position: absolute;
+    z-index: 299;
+
+    &::after {
+        content: "Loading";
+    }
+}
+
+@keyframes rot {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.move_up {
+    transform: translateY(-30rem);
+}
+
+.move_down {
+    transform: translateY(30rem);
+}
+
+.d {
+    &-loader {
+        width: 90%;
+        height: 12rem;
+        position: relative;
+        margin: 2rem auto;
+        transition: opacity 2s linear;
+    }
+
+    &-ring {
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 9.5rem;
+        height: 9.5rem;
+        background-color: var(--header-bg);
+        @include flex;
+        border-radius: 50%;
+        box-shadow: 0rem 0rem 1rem 0.1rem var(--text-color);
+
+        &:hover {
+            box-shadow: 0rem 0rem 0.4rem 0.1rem var(--text-color);
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            border: 0.1rem solid var(--text-color);
+            border-radius: 50%;
+            border-top-color: transparent;
+            animation: rot 2s infinite linear;
+        }
+    }
+}

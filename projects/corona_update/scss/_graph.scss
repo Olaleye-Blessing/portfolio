@@ -1,0 +1,96 @@
+.graph {
+    &__header {
+        margin-bottom: 3rem;
+        // background-color: blueviolet;
+        padding: 3rem 0.3rem;
+        // background-color: blue;
+        // font-weight: lighter;
+        position: relative;
+        font-size: 2.7rem;
+
+        small {
+            font-size: 1.8rem;
+            display: inline-block;
+            border: 0.1rem solid;
+            border-radius: 0.5rem;
+            padding: 0.2rem 0.9rem;
+            font-weight: bold;
+            color: red;
+            background-color: #ffcaca;
+            box-shadow: 0.1rem 0.1rem 0.9rem var(--text-color);
+            // box-shadow: 0.1rem 0.1rem 0.9rem blue;
+        }
+    }
+
+    &__key {
+        position: absolute;
+        font-size: 2rem;
+        right: 0;
+        bottom: -3rem;
+        // bottom: -50%;
+        // left: 50%;
+        // transform: translateY(-50%);
+        // height: 4rem;
+        // width: 9rem;
+        width: max-content;
+        background-color: pink;
+        display: flex;
+        align-items: stretch;
+        justify-content: flex-start;
+
+        & > div {
+            height: 100%;
+            width: 18rem;
+            width: max-content;
+            padding-left: 0.3rem;
+            padding-right: 0.3rem;
+        }
+
+        & .key-r {
+            background-color: var(--recovered-color);
+        }
+
+        & .key-a {
+            background-color: var(--critical-color);
+        }
+
+        & .key-d {
+            background-color: var(--death-color);
+        }
+    }
+    height: 50rem;
+        width: 100%;
+        // background-color: red;
+        border-left: 0.3rem solid blue;
+        border-bottom: 0.3rem solid blue;
+        position: relative;
+        display: flex;
+        flex-flow: row;
+        align-items: flex-end;
+        // justify-content: space-around;
+
+        & .recovered, & .active, & .death {
+            width: 20%;
+            height: 70%;
+            display: inline-block;
+            margin-left: 10%;
+            margin-right: 10%;
+            text-align: center;
+            @include flex;
+        }
+
+        & .recovered {
+            background-color: var(--recovered-color);
+        }
+        & .active {
+            background-color: var(--critical-color);
+        }
+        & .death {
+            background-color: var(--death-color);
+        }
+    // &__cont {
+        
+    // }
+
+    
+}

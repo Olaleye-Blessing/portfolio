@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Movie || B</title>
+        <link rel="shortcut icon" href="../svg/001-m.svg" type="image/x-icon" />
+        <script src="https://kit.fontawesome.com/7840d70357.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/index.css" />
+        <!-- <script type="module" src="index.js" defer></script> -->
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav width">
+                <button data-nav="open" class="nav__btn"></button>
+                <ul class="nav__main">
+                    <figure class="nav__logo">
+                        <svg id="Capa_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g><path d="m356.016 16h-70.018l-120.005 90h70.017z"/><path d="m477.012 16h-71.014l-120.005 90h70.017z"/><path d="m405.991 106h106.009v-75c0-1.157-.41-2.179-.657-3.261z"/><path d="m44.993 106h71.017l120.006-90h-70.018z"/><path d="m0 481c0 8.291 6.709 15 15 15h482c8.291 0 15-6.709 15-15v-345h-512zm181-270c0-5.405 2.9-10.386 7.603-13.052s10.474-2.593 15.117.19l150 90c4.512 2.71 7.28 7.588 7.28 12.861s-2.769 10.151-7.28 12.861l-150 90c-4.646 2.782-10.419 2.854-15.117.19-4.703-2.664-7.603-7.645-7.603-13.05z"/><path d="m15 16c-8.291 0-15 6.709-15 15v71.257l116.016-86.257z"/><path d="m211 237.499v127.002l105.85-63.501z"/></g></svg>
+                    </figure>
+                    <ul class="nav__sub" role="tablist">
+                        <li role="tab" aria-setsize="4" aria-posinset="1" aria-selected="true"><a href="" class="active">home</a></li>
+                        <li role="tab" aria-setsize="4" aria-posinset="2" aria-selected="false"><a href="">movies</a></li>
+                        <li role="tab" aria-setsize="4" aria-posinset="3" aria-selected="false"><a href="">tv shows</a></li>
+                        <!-- <li role="tab" aria-setsize="4" aria-posinset="4" aria-selected="false"><a href="">genres</a></li> -->
+                        <button data-nav="close" class="nav__btn"></button>
+                    </ul>
+                </ul>
+                <form class="nav__search" role="search">
+                    <input type="search" name="" id="search" placeholder="search for movies, tv shows and people" aria-label="search for movies, tv shows and people"/>
+                    <button class="nav__search-icon" aria-label="search button">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                    </button>
+                </form>
+            </nav>
+        </header>
+
+        
+
+        <main class="width panels">
+            <section class="search__result">
+                <section>
+                    <form class="search" data-form-type="search">
+                        <h3 id="searchFilterHead">Search String</h3>
+                        <div class="search__groups">
+                            <p class="search__filter">Filter Result: </p>
+                            <div class="search__group">
+                                <input type="checkbox" name="search" id="movie">
+                                <label for="movie">movie</label>
+                            </div>
+                            <div class="search__group">
+                                <input type="checkbox" name="search" id="tvshow">
+                                <label for="tvshow">tvshow</label>
+                            </div>
+                            <div class="search__group">
+                                <input type="checkbox" name="search" id="person">
+                                <label for="person">person</label>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="grid">
+                        
+                    </ul>
+            </section>
+            <div class="panel active-panel" role="tabpanel" aria-hidden="false" data-panel="home">
+                <section data-type="popularMovies" class="popular">
+                    <!-- popular movies -->
+                    <header>
+                        <h3>Popular Movies</h3>
+                    </header>
+                    <div class="container">
+                        
+                    </div>
+                </section>
+
+                <section data-type="trendingMovies">
+                    <!-- trending movies -->
+                    <header>
+                        <h3>Trending Movies</h3>
+                    </header>
+                    <div class="container">
+                                             
+                    </div>
+                </section>
+
+                <section data-type="trendingTvshows">
+                    <!-- trending movies -->
+                    <header>
+                        <h3>Trending tvShows</h3>
+                    </header>
+                    <div class="container">
+                        
+                    </div>
+                </section>
+
+                <section data-type="trendingPerson">
+                    <!-- trending movies -->
+                    <header>
+                        <h3>Trending Person</h3>
+                    </header>
+                    <div class="container">
+                        
+                    </div>
+                </section>
+                <!-- <section class="genres"></section> -->
+            </div>
+            <div class="panel" role="tabpanel" aria-hidden="true" data-panel="movie">
+                <section>
+                    <form class="filter" data-form-type="movie">
+                        <h3 id="movieFilterHead">POPULAR MOVIES</h3>
+                        <div>
+                            <label for="movieFilter">Filter Movies</label>
+                            <div class="select-wrapper">
+                                <i class="fas fa-caret-down select-arrow"></i>
+                                <select name="" id="movieFilter">
+                                    <option value="popular">Popularity</option>
+                                    <option value="top_rated">Top Rated</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="grid">
+                        
+                    </ul>
+
+                </section>
+            </div>
+            <div class="panel" role="tabpanel" aria-hidden="true" data-panel="tvShow">
+                <section>
+                    <form class="filter" data-form-type="movie">
+                        <h3 id="tvShowFilterHead">POPULAR TVSHOW</h3>
+                        <div>
+                            <label for="tvShowFilter">Filter TvShows</label>
+                            <div class="select-wrapper">
+                                <i class="fas fa-caret-down select-arrow"></i>
+                                <select name="" id="tvShowFilter">
+                                    <option value="popular">Popularity</option>
+                                    <option value="top_rated">Top Rated</option>
+                                    <option value="airing_today">Airing Today</option>
+                                    <option value="on_the_air">On the Air</option>
+                                </select>
+                                
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="grid">
+                        
+                    </ul>
+
+                </section>
+            </div>
+            <div class="pagination">
+                <ul>
+                    <!-- <li class="btn prev"><span><i class="fas fa-angle-left"></i> Prev</span></li>
+                    <li class="numb active"><span>1</span></li>
+                    <li class="numb"><span>2</span></li>
+                    <li class="dot"><span>...</span></li>
+                    <li class="numb"><span>4</span></li>
+                    <li class="numb"><span>5</span></li>
+                    <li class="dot"><span>...</span></li>
+                    <li class="numb"><span>7</span></li>
+                    <li class="btn next"><span>Next <i class="fas fa-angle-right"></i></span></li> -->
+                </ul>
+            </div>
+        </main>
+    </body>
+</html>
+
+<!-- 
+    search
+    trending
+
+ -->

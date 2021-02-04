@@ -1,0 +1,33 @@
+// footer {}
+
+.social__links {
+    // background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > a {
+        color: inherit;
+        padding: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+
+        svg {
+            fill: currentColor;
+        }
+
+        &:hover figure svg{
+            fill: green;
+        }
+    }
+    img, svg {
+        max-width: 100%;
+    }
+}
+
+.copy {
+    // background-color: red;
+    margin-top: 2rem;
+    text-align: center;
+    padding: 0.8rem 1.5rem;
+}
