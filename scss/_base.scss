@@ -1,0 +1,78 @@
+:root {
+    --nav-bg: #1d1d1d;
+    --main-bg: #000;
+    --main-color: #fff;
+    --nav-link-color: #d22;
+    --nav-link-hover: #fffc;
+    --mode-bg: url(../svg/002-sun.svg);
+    --links-color: #00b1ff;
+
+    &.light {
+        --nav-bg: #ededed;
+        --nav-bg: #e1e1e1;
+        --main-bg: #fff;
+        --main-color: #000;
+        --nav-link-hover: #000c;
+        --mode-bg: url(../svg/001-moon.svg);
+    }
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+*:focus {
+    outline: 0.2rem solid red;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+}
+
+* {
+    transition: background 0.5s linear, color 0.5s linear;
+    scrollbar-color: blue;
+}
+
+body {
+    line-height: 1.5;
+    font-size: 1.6rem;
+    color: var(--main-color);
+    background-color: var(--main-bg);
+}
+
+a {
+    text-decoration: none;
+    &:link, &:visited {
+        color: var(--links-color);
+    }
+}
+
+
+
+// nav, header.width {
+//     padding-right: 2.5rem;
+//     padding-left: 2.5rem;
+// }
+
+// nav > div, .heading {
+//     padding-right: 2.5rem;
+//     padding-left: 2.5rem;
+// }
+
+ul {
+    list-style: none;
+}
+
+svg,
+img {
+    width: 100%;
+}

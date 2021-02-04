@@ -1,0 +1,34 @@
+.width {
+    width: 100%;
+    max-width: 110rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    // background-color: green;
+}
+
+.special {
+    background-color: var(--links-color);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    
+    &-size {
+        font-size: clamp(3rem, 14vw, 6rem);
+    }
+}
+
+// // @media (max-width: 354px) {
+// //     .special {
+// //         font-size: 15vw;
+// //     }
+// // }
+
+.nav-bg {
+    background-color: var(--nav-bg);
+}
+
+.font-small {
+    font-size: 1.5rem;
+}

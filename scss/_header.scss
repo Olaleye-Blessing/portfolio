@@ -1,0 +1,34 @@
+.header {
+    margin-bottom: 4rem;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 4rem;
+}
+
+.heading {
+    padding-top: 17rem;
+    font-size: 2em;
+
+    header {
+        max-width: 52rem;
+
+        & > *:not(:last-child) {
+            // background-color: red !important;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__link {
+        // margin-top: 2rem;
+        font-size: 1.7rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .heading {
+        background-image: url(../svg/001-programming.svg);
+        background-repeat: no-repeat;
+        background-position: right bottom 40%;
+        background-size: 40% 50%;
+    }
+}
