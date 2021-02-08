@@ -14,7 +14,11 @@
         border: none;
         color: var(--links-color);
         background-color: var(--main-bg);
+        background-color: var(--main-color);
         // transform: rotateY(180deg);
+        &.flipped {
+            background-color: var(--main-bg);
+        }
     }
 
     &__lists {
