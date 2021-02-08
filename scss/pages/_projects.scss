@@ -1,8 +1,10 @@
 @supports (display: flex) {
     .all__projects {
-        gap: 9rem 5rem;
+        // gap: 9rem 5rem;
+        gap: 0rem 3rem;
     }
 }
+
 .all__projects {
     margin-top: 4rem;
     @include flex(row, center);
@@ -117,6 +119,7 @@
                     color: var(--main-color);
                     font-size: 1.9rem;
                     font-style: italic;
+                    font-family: 'Poppins', sans-serif;
                 }
             }
         }

@@ -7,6 +7,7 @@
   --mode-bg: url(../svg/002-sun.svg);
   --links-color: #00b1ff;
   --gray: #777;
+  --card-bg: rgba(0, 0, 0, 0.6);
 }
 
 :root [data-btn="mode"] {
@@ -14,6 +15,7 @@
 }
 
 :root.light {
+  --card-bg: rgba(225, 225, 225, 0.6);
   --nav-bg: #ededed;
   --nav-bg: #e1e1e1;
   --main-bg: #fff;
@@ -62,6 +64,16 @@ body {
   font-size: 1.6rem;
   color: var(--main-color);
   background-color: var(--main-bg);
+  font-family: 'Lora', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+a, button {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
 }
 
 p {
@@ -74,20 +86,25 @@ main {
 }
 
 main section {
+  margin-bottom: 13rem;
   scroll-snap-align: start;
   scroll-margin: 8.1rem;
+}
+
+main section:last-child {
+  margin-bottom: 0;
 }
 
 main section:first-child {
   padding-top: 8rem;
 }
 
-main section p {
-  font-weight: bold;
+main section > p, main section header p {
   padding: 0.7rem 1.5rem;
+  padding-left: 0;
   font-size: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1.7rem;
+  margin-bottom: 1.7rem;
 }
 
 h2 {
@@ -95,6 +112,7 @@ h2 {
   width: -moz-max-content;
   width: max-content;
   padding: 1rem 2rem;
+  padding-left: 0;
   font-size: clamp(3rem, 8vw, 4rem);
   position: relative;
   color: var(--links-color);
@@ -106,6 +124,7 @@ h2::after {
   display: block;
   top: 90%;
   left: 2rem;
+  left: 0;
   width: 50%;
   height: 0.2rem;
   background-color: red;
@@ -321,7 +340,6 @@ img {
 }
 
 .heading__link > a:last-child:hover {
-  background-color: var(--links-color);
   color: var(--main-color);
   border: 0.2rem solid;
 }
@@ -500,187 +518,45 @@ img {
   border-radius: 0.7rem;
   background-color: var(--main-color);
   font-size: 2rem;
-}
-
-.btn:hover {
-  color: var(--main-color);
-  background-color: var(--links-color);
-}
-
-.scene {
-  height: 29rem;
-  width: 30rem;
-  -webkit-perspective: 90rem;
-          perspective: 90rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.card {
-  width: 100%;
-  height: 100%;
   position: relative;
-  -webkit-transition: -webkit-transform 1.5s;
-  transition: -webkit-transform 1.5s;
-  transition: transform 1.5s;
-  transition: transform 1.5s, -webkit-transform 1.5s;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  border: 0.2rem solid var(--main-color);
 }
 
-.card__face {
-  position: absolute;
-  height: 100%;
+.btn:focus {
+  outline: none;
+  text-decoration: underline;
+}
+
+.btn:focus, .btn:hover {
+  color: var(--main-color);
+  background-color: transparent;
+}
+
+.btn:focus:after, .btn:hover:after {
   width: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  height: 100%;
 }
 
-.card__face--front {
-  background-color: var(--links-color);
-  padding-bottom: 5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.card__face--front h3 {
-  -webkit-transform: perspective(80rem) translateZ(5rem);
-          transform: perspective(80rem) translateZ(5rem);
-  letter-spacing: 0.01rem;
-  padding-bottom: 1rem;
-}
-
-.card__face--front figure {
-  margin-top: 1rem;
-}
-
-.card__face--back {
-  padding: 1rem;
-  font-size: 1.9rem;
-  background: blue;
-  background-color: var(--main-color);
-  color: var(--main-bg);
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.card__face--back div:nth-child(2) {
-  margin-top: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 1rem;
-}
-
-.card__face--back div:nth-child(2) a {
+.btn:after {
   display: block;
-  color: var(--nav-link-color);
-}
-
-.card__face--back div:nth-child(2) a:hover {
-  color: var(--links-color);
-}
-
-.card__face--back div:nth-child(2) figure {
-  width: 3.5rem;
-  padding: 0.5rem 0.4rem;
-}
-
-@media (min-width: 1000px) {
-  .card.desktop-hover-flip:hover {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
-  }
-}
-
-.project__info {
-  width: 3rem;
-  height: 3rem;
   position: absolute;
-  z-index: 700;
+  content: "";
   top: 0;
   left: 0;
-  border: none;
-  color: var(--links-color);
-  background-color: var(--main-bg);
-  background-color: var(--main-color);
-}
-
-.project__info.flipped {
-  background-color: var(--main-bg);
+  width: 100%;
+  width: 0%;
+  height: 100%;
+  height: 0%;
+  background-color: var(--links-color);
+  -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+  -webkit-transition: width 0.3s linear, height 0.3s linear;
+  transition: width 0.3s linear, height 0.3s linear;
+  z-index: -1;
+  border-radius: 0.7rem;
 }
 
 .project__lists {
-  text-align: center;
-  margin-top: 4rem;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(26rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
-  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 8rem 5rem;
-}
-
-.project__link {
-  margin-top: 7.5rem;
-  font-size: 1.5em;
-  text-align: center;
-}
-
-@media (hover: hover) {
-  .project__info {
-    display: none;
-  }
-}
-
-@media (min-width: 1000px) {
-  .project__info {
-    display: none;
-  }
-}
-
-.skills li {
-  text-align: center;
-  color: var(--links-color);
-}
-
-.skills__list {
-  margin-top: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -688,45 +564,137 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 2rem 3rem;
+}
+
+.card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 29rem;
+          flex: 1 1 29rem;
+  max-width: 35rem;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  min-height: 20rem;
+  overflow: hidden;
+}
+
+.card__img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
+.card__img-cont {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.card__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: var(--nav-bg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 5rem 1rem;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  text-align: center;
 }
 
-.skills__list li {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 14rem;
-          flex: 1 0 14rem;
-  max-width: 14.5rem;
-  margin-left: auto;
-  margin-right: auto;
+.card__overlay:hover {
+  opacity: 1;
 }
 
-.skills__current {
+.card__overlay:hover > * {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.card__overlay > * {
+  -webkit-transform: translateY(3rem);
+          transform: translateY(3rem);
+  -webkit-transition: -webkit-transform 0.4s ease-out;
+  transition: -webkit-transform 0.4s ease-out;
+  transition: transform 0.4s ease-out;
+  transition: transform 0.4s ease-out, -webkit-transform 0.4s ease-out;
+}
+
+.card__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
 }
 
-.skills__current > * {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 14rem;
-          flex: 1 0 14rem;
-  max-width: 14.5rem;
+.card__link a {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 2rem;
+          flex: 0 0 2rem;
+}
+
+.card__focus .card__overlay {
+  opacity: 1;
+}
+
+.card__focus .card__overlay > * {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.project__lists {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+.project__link {
+  margin-left: auto;
+  margin-right: auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.skills {
+  margin-top: 3rem;
+}
+
+.skills li {
+  margin-bottom: 2rem;
+  padding: 0.5rem 2rem;
+  background-image: url(../svg/angle-right-solid.svg);
+  background-size: 1rem;
+  background-position: left center;
+  background-repeat: no-repeat;
 }
 
 footer {
@@ -846,7 +814,7 @@ footer {
 
 @supports (display: flex) {
   .all__projects {
-    gap: 9rem 5rem;
+    gap: 0rem 3rem;
   }
 }
 
@@ -1005,6 +973,7 @@ footer {
   color: var(--main-color);
   font-size: 1.9rem;
   font-style: italic;
+  font-family: 'Poppins', sans-serif;
 }
 
 .header {

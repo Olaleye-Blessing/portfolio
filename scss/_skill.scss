@@ -1,40 +1,58 @@
 .skills {
-    // background-color: yellow;
-    // ul {
-    //     // text-align: center;
+    // background-color: coral;
+    margin-top: 3rem;
     li {
-        text-align: center;
-        //         // width: 19rem;
-        color: var(--links-color);
-    }
-    // }
-    &__list {
-        margin-top: 6rem;
-        // display: grid;
-        // grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-        // grid-template-columns: repeat(auto-fit, 14rem);
-        // gap: 5rem 6rem;
-        // @include grid-small;
-        // display: flex;
-        // flex-flow: row wrap;
-        // align-items: center;
-        // justify-content: center;
-        @include flex(row, center);
+        margin-bottom: 2rem;
+        // background-color: coral;
+        padding: 0.5rem 2rem;
+        background-image: url(../svg/angle-right-solid.svg);
+        background-size: 1rem;
+        background-position: left center;
+        background-repeat: no-repeat;
 
-        gap: 5rem 1rem;
-        li {
-            flex: 1 0 14rem;
-            max-width: 14.5rem;
-            @include margin-auto;
-        }
-    }
-
-    &__current {
-        @include flex(row, flex-start);
-
-        & > * {
-            flex: 1 0 14rem;
-            max-width: 14.5rem;
+        &:last-child {
+            // background-color: green;
         }
     }
 }
+
+// .skills {
+//     // background-color: yellow;
+//     // ul {
+//     //     // text-align: center;
+//     li {
+//         text-align: center;
+//         //         // width: 19rem;
+//         color: var(--links-color);
+//     }
+//     // }
+//     &__list {
+//         margin-top: 6rem;
+//         // display: grid;
+//         // grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+//         // grid-template-columns: repeat(auto-fit, 14rem);
+//         // gap: 5rem 6rem;
+//         // @include grid-small;
+//         // display: flex;
+//         // flex-flow: row wrap;
+//         // align-items: center;
+//         // justify-content: center;
+//         @include flex(row, center);
+
+//         gap: 5rem 1rem;
+//         li {
+//             flex: 1 0 14rem;
+//             max-width: 14.5rem;
+//             @include margin-auto;
+//         }
+//     }
+
+//     &__current {
+//         @include flex(row, flex-start);
+
+//         & > * {
+//             flex: 1 0 14rem;
+//             max-width: 14.5rem;
+//         }
+//     }
+// }

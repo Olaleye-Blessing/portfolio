@@ -7,11 +7,13 @@
     --mode-bg: url(../svg/002-sun.svg);
     --links-color: #00b1ff;
     --gray: #777;
+    --card-bg: rgba(0, 0, 0, 0.6);
     [data-btn="mode"] {
         background-image: url(../svg/002-sun.svg);
     }
 
     &.light {
+        --card-bg: rgba(225, 225, 225, 0.6);
         --nav-bg: #ededed;
         --nav-bg: #e1e1e1;
         --main-bg: #fff;
@@ -60,8 +62,21 @@ html {
 body {
     line-height: 1.5;
     font-size: 1.6rem;
+    // font-size: 1.8rem;
     color: var(--main-color);
     background-color: var(--main-bg);
+    // font-family: 'EB Garamond', serif;
+    // font-family: 'Poppins', sans-serif;
+    font-family: 'Lora', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+a, button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 
 p {
@@ -74,11 +89,16 @@ main {
 
     section {
         // background-color: red;
+        margin-bottom: 13rem;
         // padding-top: 2rem;
         // padding-bottom: 2rem;
         // scroll-snap-type: y mandatory;
         scroll-snap-align: start;
         scroll-margin: 8.1rem;
+        &:last-child {
+            // background-color: purple;
+            margin-bottom: 0;
+        }
 
         &:first-child {
             // margin-top: 4rem;
@@ -86,12 +106,14 @@ main {
             padding-top: 8rem;
         }
 
-        p {
-            font-weight: bold;
+        & > p, & header p {
+            // background-color: red;
+        //     font-weight: bold;
             padding: 0.7rem 1.5rem;
+            padding-left: 0;
             font-size: 2rem;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
+            margin-top: 1.7rem;
+            margin-bottom: 1.7rem;
         }
     }
 }
@@ -99,6 +121,7 @@ main {
 h2 {
     width: max-content;
     padding: 1rem 2rem;
+    padding-left: 0;
     font-size: clamp(3rem, 8vw, 4rem);
     position: relative;
     color: var(--links-color);
@@ -109,6 +132,7 @@ h2 {
         display: block;
         top: 90%;
         left: 2rem;
+        left: 0;
         width: 50%;
         height: 0.2rem;
         background-color: red;

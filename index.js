@@ -1,3 +1,4 @@
+// import { allProjects } from "./list_of_projects.js";
 const navBar = document.querySelector("header .navbar");
 
 const menu = document.querySelector(".menu-list");
@@ -41,3 +42,4 @@ window.addEventListener("scroll", (event) => {
         navBar.classList.remove("nav-bg");
     }
 });
+
