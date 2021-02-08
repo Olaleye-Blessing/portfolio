@@ -56,3 +56,5 @@ window.addEventListener("load", (event) => {
         headerVideoBg.innerHTML = `<video class="bg__video-content" autoplay muted loop playsinline>${videoBg}</video>`;
     }
 });
+
+console.log(navBar);

@@ -23,7 +23,6 @@ footer {
 
 @media (min-width: 801px) {
     footer {
-
         & > div {
             @include flex(row-reverse, flex-start);
             gap: 3rem;
@@ -34,6 +33,14 @@ footer {
         &__social-links {
             margin-bottom: 0;
             margin-left: auto;
+
+            & > * {
+                flex: 1 1 2.3rem;
+                max-width: 2.5rem;
+                &:last-child {
+                    margin-right: 6.5rem;
+                }
+            }
         }
     }
 }

@@ -17,9 +17,13 @@
     transition: transform 1.5s;
     transform-style: preserve-3d;
 
-    &:hover {
-        transform: rotateY(180deg);
-    }
+    // &.hover-flip:hover {
+    //     transform: rotateY(180deg);
+    // }
+
+    // &:hover {
+    //     transform: rotateY(180deg);
+    // }
 
     &__face {
         position: absolute;
@@ -33,9 +37,9 @@
             // @include flex-col(flex-end);
             @include flex(column, flex-end);
             h3 {
-                transform: perspective(90rem) translateZ(10rem);
+                // transform: perspective(90rem) translateZ(10rem);
+                transform: perspective(80rem) translateZ(5rem);
                 letter-spacing: 0.01rem;
-                // font-size: 2.5rem;
                 padding-bottom: 1rem;
             }
 
@@ -74,6 +78,14 @@
                     padding: 0.5rem 0.4rem;
                 }
             }
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .card {
+        &.desktop-hover-flip:hover {
+            transform: rotateY(180deg);
         }
     }
 }

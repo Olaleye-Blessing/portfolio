@@ -70,18 +70,20 @@ p {
 
 main {
     // padding-top: 15rem;
+    scroll-snap-type: y mandatory;
 
     section {
         // background-color: red;
-        // margin-top: 5rem;
-        // padding-bottom: 5rem;
-        // padding-top: 0rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        // padding-top: 2rem;
+        // padding-bottom: 2rem;
+        // scroll-snap-type: y mandatory;
+        scroll-snap-align: start;
+        scroll-margin: 8.1rem;
+
         &:first-child {
-            margin-top: 4rem;
-            // padding-top: 4rem;
-            padding-top: 10rem;
+            // margin-top: 4rem;
+            // padding-top: 10rem;
+            padding-top: 8rem;
         }
 
         p {

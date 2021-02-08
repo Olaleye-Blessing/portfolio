@@ -6,10 +6,3 @@ window.addEventListener('load', event => {
         homeLoader.remove();
     }, 2100);
 })
-
-// window.addEventListener("load", event => {
-//     let videoBg = localStorage.getItem('videoBg');
-//     if (videoBg) {
-//         headerVideoBg.innerHTML = `<video class="bg__video-content" autoplay muted loop>${videoBg}</video>`;
-//     }
-// })

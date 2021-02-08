@@ -35,6 +35,10 @@
                 margin-left: 1.8rem;
                 transition: background 0.5s linear, color 0.3s linear;
 
+                &.active-link {
+                    background-color: var(--nav-link-hover);
+                }
+
                 &:hover {
                     background-color: var(--nav-link-hover);
                 }
@@ -109,7 +113,6 @@
             height: 100vh;
             width: 100%;
             max-width: 40rem;
-            // max-width: 60rem;
             background-color: var(--nav-bg);
             display: block;
             padding: 4rem 0;
