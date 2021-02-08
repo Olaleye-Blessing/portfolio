@@ -350,8 +350,8 @@ img {
     display: block;
     padding: 4rem 0;
     text-align: center;
-    -webkit-transition: left 1s linear;
-    transition: left 1s linear;
+    -webkit-transition: left 0.4s linear;
+    transition: left 0.4s linear;
   }
   .navbar .menu-list.active {
     left: 0;
@@ -448,6 +448,7 @@ img {
   overflow: hidden;
   -webkit-transition: opacity 0.6s linear;
   transition: opacity 0.6s linear;
+  background-color: var(--main-bg);
 }
 
 .bg__video-content {

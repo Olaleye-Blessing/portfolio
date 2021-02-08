@@ -20,7 +20,7 @@ homeProjectCont.addEventListener("click", (event) => {
 window.addEventListener("load", (event) => {
     let videoBg = localStorage.getItem("videoBg");
     if (videoBg) {
-        headerVideoBg.innerHTML = `<video class="bg__video-content" autoplay muted loop>${videoBg}</video>`;
+        headerVideoBg.innerHTML = `<video class="bg__video-content" autoplay muted loop playsinline>${videoBg}</video>`;
     }
 });
 
@@ -40,7 +40,9 @@ modeToggle.addEventListener("click", (event) => {
     }
 
     setTimeout(() => {
-        headerVideoBg.innerHTML = `<video class="bg__video-content" autoplay muted loop>${videoBg}</video>`;
+        headerVideoBg.innerHTML = ``;
+        headerVideoBg.innerHTML = `<video class="bg__video-content" autoplay muted loop playsinline>${videoBg}</video>`
+        // headerVideoBg.innerHTML = `<video class="bg__video-content" autoplay muted loop>${videoBg}</video>`;
         headerVideoBg.style.opacity = 1;
     }, 700);
 
@@ -51,6 +53,6 @@ modeToggle.addEventListener("click", (event) => {
 window.addEventListener("load", (event) => {
     let videoBg = localStorage.getItem("videoBg");
     if (videoBg) {
-        headerVideoBg.innerHTML = `<video class="bg__video-content" autoplay muted loop>${videoBg}</video>`;
+        headerVideoBg.innerHTML = `<video class="bg__video-content" autoplay muted loop playsinline>${videoBg}</video>`;
     }
 });
