@@ -1,19 +1,14 @@
 .project__lists {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: stretch;
-    justify-content: flex-start;
-    gap: 2rem 3rem;
     // background-color: rosybrown;
 }
 
 .card {
-    flex: 1 1 29rem;
+    min-width: 29rem;
     max-width: 35rem;
-    // background-color: cyan;
     position: relative;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 4.5rem;
     min-height: 20rem;
     overflow: hidden;
 
@@ -36,7 +31,6 @@
         bottom: 0;
         right: 0;
         background-color: var(--nav-bg);
-        @include flex(column, center);
         opacity: 0;
         transition: all 0.3s ease-in;
         text-align: center;
@@ -52,18 +46,15 @@
         & > * {
             transform: translateY(3rem);
             transition: transform 0.4s ease-out;
+            margin-top: 0.6em;
         }
     }
 
     &__link {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1.5rem;
-        margin-top: 1.5rem;
-
         a {
-            flex: 0 0 2rem;
+            display: inline-block;
+            width: 2rem;
+            margin-right: 1rem;
         }
     }
 }
@@ -74,6 +65,37 @@
             opacity: 1;
             & > * {
                 transform: translateY(0);
+            }
+        }
+    }
+}
+
+@supports (display: flex) {
+    .project__lists {
+        @include flex(row, flex-start);
+        align-items: stretch;
+        gap: 2.5rem 3rem;
+    }
+
+    .card {
+        margin-bottom: 0;
+        flex: 1 1 29rem;
+
+        &__overlay {
+            @include flex(column, center);
+            gap: 1rem;
+
+            & > * {
+                margin-top: 0;
+            }
+        }
+
+        &__link {
+            @include flex(row, center);
+            gap: 1.5rem;
+
+            a {
+                flex: 0 0 2rem;
             }
         }
     }
