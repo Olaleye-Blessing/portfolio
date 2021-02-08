@@ -1,0 +1,27 @@
+@mixin grid-small {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    // grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+    gap: 6rem 8rem;
+}
+
+@mixin flex($dir, $jus) {
+    display: flex;
+    flex-flow: $dir wrap;
+    align-items: center;
+    justify-content: $jus;
+}
+
+@mixin small-para {
+    font-weight: bold;
+    text-align: left;
+    padding: 0.7rem 1.5rem;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+@mixin margin-auto {
+    margin-left: auto;
+    margin-right: auto;
+}

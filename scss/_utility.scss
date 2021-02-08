@@ -13,17 +13,11 @@
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-    
+
     &-size {
         font-size: clamp(3rem, 14vw, 6rem);
     }
 }
-
-// // @media (max-width: 354px) {
-// //     .special {
-// //         font-size: 15vw;
-// //     }
-// // }
 
 .nav-bg {
     background-color: var(--nav-bg);
@@ -31,4 +25,55 @@
 
 .font-small {
     font-size: 1.5rem;
+}
+
+.small-para {
+    @include small-para;
+}
+
+.margin-small {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.margin-big {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+li[data-project-source="personal"] a:first-child:any-link {
+    color: red !important;
+    cursor: not-allowed;
+}
+
+.flipped {
+    transform: rotateY(180deg);
+}
+
+.resume {
+    a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-color: var(--main-color);
+        padding: 0.9rem 1.4rem 0.8rem;
+        border-radius: 50%;
+        background-image: url(../svg/file-regular.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: 2rem;
+        background-position: center;
+
+        &:hover {
+            background-color: var(--nav-bg);
+        }
+    }
+    position: fixed;
+    right: 2rem;
+    bottom: 1rem;
+    z-index: 800;
+    width: 6rem;
+    height: 6rem;
+    // background-color: red;
+    // @include flex(row, center);
 }

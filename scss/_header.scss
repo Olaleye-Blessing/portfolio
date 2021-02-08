@@ -1,8 +1,7 @@
 .header {
-    margin-bottom: 4rem;
     position: relative;
     min-height: 100vh;
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
 }
 
 .heading {
@@ -13,14 +12,34 @@
         max-width: 52rem;
 
         & > *:not(:last-child) {
-            // background-color: red !important;
             margin-bottom: 1.5rem;
         }
     }
 
     &__link {
         // margin-top: 2rem;
+        margin-top: 3rem;
         font-size: 1.7rem;
+        @include flex(row, flex-start);
+        gap: 3rem;
+
+        & > a:last-child {
+            // margin-left: 5rem;
+            background-color: red;
+            background-color: var(--links-color);
+            background-color: transparent;
+            color: var(--main-color);
+            border: 0.2rem solid var(--links-color);
+            font-weight: bold;
+
+            &:hover {
+                // background-color: var(--main-color);
+                // color: var(--links-color);
+                background-color: var(--links-color);
+                color: var(--main-color);
+                border: 0.2rem solid;
+            }
+        }
     }
 }
 

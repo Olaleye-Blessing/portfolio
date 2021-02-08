@@ -19,10 +19,7 @@
     }
 
     .width {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        justify-content: flex-start;
+        @include flex(row, flex-start);
     }
 
     .menu-list {
@@ -31,7 +28,7 @@
 
         li {
             a {
-                border-radius: 0.5rem;
+                border-radius: $border-rad;
                 padding: 0.4rem 0.8rem;
                 color: var(--nav-link-color);
                 font-size: 2rem;
@@ -42,7 +39,6 @@
                     background-color: var(--nav-link-hover);
                 }
                 &:active {
-                    // color: #961c1c;
                     color: var(--main-color);
                     background-color: transparent;
                 }

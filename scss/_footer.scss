@@ -1,0 +1,39 @@
+footer {
+    background-color: var(--nav-bg);
+    text-align: center;
+    font-size: 2.2rem;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+}
+
+.footer {
+    &__social-links {
+        @include flex(row, center);
+        margin-bottom: 3rem;
+
+        & > * {
+            flex: 1 1 3.4rem;
+            max-width: 4rem;
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 801px) {
+    footer {
+
+        & > div {
+            @include flex(row-reverse, flex-start);
+            gap: 3rem;
+        }
+    }
+
+    .footer {
+        &__social-links {
+            margin-bottom: 0;
+            margin-left: auto;
+        }
+    }
+}

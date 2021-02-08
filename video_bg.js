@@ -1,11 +1,4 @@
-const homeLoader = document.querySelector('.home-loader');
-
-window.addEventListener('load', event => {
-    homeLoader.style.opacity = 0;
-    setTimeout(() => {
-        homeLoader.remove();
-    }, 2100);
-})
+// const headerVideoBg = document.querySelector('[data-video-type="header-bg"]');
 
 // window.addEventListener("load", event => {
 //     let videoBg = localStorage.getItem('videoBg');
