@@ -395,28 +395,12 @@ img {
   margin-bottom: 1.5rem;
 }
 
-.heading__link {
-  margin-top: 3rem;
-  font-size: 1.7rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  gap: 3rem;
+.heading__link > a:first-child {
+  margin-right: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .heading__link > a:last-child {
-  background-color: red;
-  background-color: var(--links-color);
   background-color: transparent;
   color: var(--main-color);
   border: 0.2rem solid var(--links-color);
