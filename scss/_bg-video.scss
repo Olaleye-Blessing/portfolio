@@ -15,3 +15,10 @@
         object-fit: cover;
     }
 }
+
+
+@media (max-width: 800px) {
+    .bg__video {
+        display: none;
+    }
+}
