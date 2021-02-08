@@ -379,8 +379,8 @@ img {
   border: 0.2rem inset var(--links-color);
   border-left: transparent;
   border-right: transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(57%, var(--links-color)), color-stop(57%, transparent));
-  background-image: linear-gradient(180deg, var(--links-color) 57%, transparent 57%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(62%, var(--links-color)), color-stop(62%, transparent));
+  background-image: linear-gradient(180deg, var(--links-color) 62%, transparent 62%);
 }
 
 .contact p {
@@ -565,6 +565,18 @@ img {
   margin-bottom: 4.5rem;
   min-height: 20rem;
   overflow: hidden;
+  padding: 1rem;
+  -webkit-box-shadow: 0 0rem 0.5rem 0.1rem var(--links-color);
+          box-shadow: 0 0rem 0.5rem 0.1rem var(--links-color);
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 0rem 0.2rem 0.1rem var(--links-color);
+          box-shadow: 0 0rem 0.2rem 0.1rem var(--links-color);
 }
 
 .card__img {
