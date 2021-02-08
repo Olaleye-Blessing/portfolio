@@ -379,8 +379,8 @@ img {
   border: 0.2rem inset var(--links-color);
   border-left: transparent;
   border-right: transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(52%, var(--links-color)), color-stop(51%, transparent));
-  background-image: linear-gradient(180deg, var(--links-color) 52%, transparent 51%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(57%, var(--links-color)), color-stop(57%, transparent));
+  background-image: linear-gradient(180deg, var(--links-color) 57%, transparent 57%);
 }
 
 .contact p {
@@ -648,7 +648,6 @@ img {
     gap: 2.5rem 3rem;
   }
   .card {
-    margin-bottom: 0;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 29rem;
             flex: 1 1 29rem;
