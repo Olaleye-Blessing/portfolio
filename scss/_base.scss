@@ -7,6 +7,9 @@
     --mode-bg: url(../svg/002-sun.svg);
     --links-color: #00b1ff;
     --gray: #777;
+    [data-btn="mode"] {
+        background-image: url(../svg/002-sun.svg);
+    }
 
     &.light {
         --nav-bg: #ededed;
@@ -15,6 +18,9 @@
         --main-color: #000;
         --nav-link-hover: #000c;
         --mode-bg: url(../svg/001-moon.svg);
+        [data-btn="mode"] {
+            background-image: url(../svg/001-moon.svg);
+        }
     }
 }
 

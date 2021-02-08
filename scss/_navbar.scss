@@ -59,8 +59,8 @@
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            background-image: var(--mode-bg);
-            transition: background 4s linear;
+            // background-image: var(--mode-bg);
+            // transition: background 4s linear;
         }
         &[data-btn="toggle"] {
             display: none;

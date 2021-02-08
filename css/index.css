@@ -9,6 +9,10 @@
   --gray: #777;
 }
 
+:root [data-btn="mode"] {
+  background-image: url(../svg/002-sun.svg);
+}
+
 :root.light {
   --nav-bg: #ededed;
   --nav-bg: #e1e1e1;
@@ -16,6 +20,10 @@
   --main-color: #000;
   --nav-link-hover: #000c;
   --mode-bg: url(../svg/001-moon.svg);
+}
+
+:root.light [data-btn="mode"] {
+  background-image: url(../svg/001-moon.svg);
 }
 
 html {
@@ -201,9 +209,6 @@ img {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: var(--mode-bg);
-  -webkit-transition: background 4s linear;
-  transition: background 4s linear;
 }
 
 .navbar button[data-btn="toggle"] {
@@ -340,12 +345,6 @@ img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-@media (max-width: 800px) {
-  .bg__video {
-    display: none;
-  }
 }
 
 .contact {
