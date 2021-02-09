@@ -6,7 +6,7 @@ const allProjects = [
         live:
             "https://personal-trials-git-master.olaleye-blessing.vercel.app/Movie/index.html",
         summary:
-            "An online movie that gives information about movies and tvshows.",
+            "An online movie site that gives information about movies and tvshows.",
         api: true,
         updating: 'yes'
     },
@@ -83,7 +83,7 @@ const allProjects = [
         github:
             "https://github.com/Olaleye-Blessing/Blessing_Olaleye_HomePage/tree/master/frontendMentor/rest-countries-api-with-color-theme-switcher-master",
         summary:
-            "Get the easy information of a country.",
+            "Get some information about a searched country, easily.",
         api: true,
     },
     {
@@ -107,7 +107,7 @@ const allProjects = [
         github:
             "https://github.com/Olaleye-Blessing/Blessing_Olaleye_HomePage/tree/master/frontendMentor/huddle-landing-page-with-curved-sections-master",
         summary:
-            "Look alike of a homepage",
+            "Lookalike homepage",
         api: false,
     },
     {
@@ -119,7 +119,7 @@ const allProjects = [
         github:
             "https://github.com/Olaleye-Blessing/Blessing_Olaleye_HomePage/tree/master/frontendMentor/room-homepage-master",
         summary:
-            "Look alike of a home page with sliding animation.",
+            "Look-alike home page with sliding animation.",
         api: false,
     },
     {
@@ -155,7 +155,7 @@ const allProjects = [
         github:
             "https://github.com/Olaleye-Blessing/Blessing_Olaleye_HomePage/tree/master/frontendMentor/social-media-dashboard-with-theme-switcher-master",
         summary:
-            "Look alike of a user social dashboard, showing little information",
+            "Look-alike social dashboard, showing little information",
         api: false,
     },
     {
@@ -167,7 +167,7 @@ const allProjects = [
         github:
             "https://github.com/Olaleye-Blessing/Blessing_Olaleye_HomePage/tree/master/frontendMentor/social-proof-section-master",
         summary:
-            "Get review from people helps our growth. This shows a what a custom page review looks like.",
+            "Getting review from people helps our growth. This shows what a custom page review looks like.",
         api: false,
     },
     {
