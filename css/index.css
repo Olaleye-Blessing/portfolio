@@ -383,8 +383,8 @@ img {
   border: 0.2rem inset var(--links-color);
   border-left: transparent;
   border-right: transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(62%, var(--links-color)), color-stop(62%, transparent));
-  background-image: linear-gradient(180deg, var(--links-color) 62%, transparent 62%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(56%, var(--links-color)), color-stop(56%, transparent));
+  background-image: linear-gradient(180deg, var(--links-color) 56%, transparent 56%);
 }
 
 .contact p {
@@ -432,6 +432,7 @@ img {
 @media (min-width: 821px) {
   .contact {
     background-image: linear-gradient(110deg, var(--links-color) 56%, transparent 51%);
+    background-image: linear-gradient(110deg, var(--links-color) 61%, transparent 61%);
   }
   .contact__question {
     padding-bottom: 0;
@@ -440,7 +441,7 @@ img {
 
 @media (min-width: 1058px) {
   .contact {
-    background-image: linear-gradient(135deg, var(--links-color) 51%, transparent 51%);
+    background-image: linear-gradient(135deg, var(--links-color) 56%, transparent 56%);
   }
 }
 
