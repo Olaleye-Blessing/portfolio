@@ -78,3 +78,13 @@ li[data-project-source="personal"] a:first-child:any-link {
     // background-color: red;
     // @include flex(row, center);
 }
+
+.arrow {
+    background-image: url(../svg/angle-right-solid.svg);
+    background-size: 1rem;
+    background-position: left center;
+    background-repeat: no-repeat;
+    margin-bottom: 2rem;
+    // background-color: coral;
+    padding: 0.5rem 2rem;
+}

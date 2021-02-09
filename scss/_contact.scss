@@ -1,15 +1,24 @@
-
 .contact {
     padding-top: 7.5rem;
     padding-bottom: 7.5rem;
     border: 0.2rem inset var(--links-color);
     border-left: transparent;
     border-right: transparent;
+    // background-image: linear-gradient(
+    //     180deg,
+    //     var(--links-color) 56%,
+    //     transparent 56%
+    // );
     background-image: linear-gradient(
         180deg,
-        var(--links-color) 56%,
-        transparent 56%
+        var(--nav-bg) 57%,
+        transparent 57%
     );
+    // background-image: linear-gradient(
+    //     180deg,
+    //     var(--nav-bg) 70%,
+    //     transparent 70%
+    // );
 
     p {
         font-size: 4.5rem;
@@ -18,8 +27,8 @@
     }
 
     &__question {
-        list-style: disc;
-        padding-left: 2rem;
+        // list-style: disc;
+        // padding-left: 2rem;
         font-size: 2.2rem;
         font-weight: normal;
         padding-bottom: 6.5rem;
@@ -52,26 +61,35 @@
 
 @media (max-width: 467px) {
     .contact {
+        // background-image: linear-gradient(
+        //     180deg,
+        //     var(--links-color) 57%,
+        //     transparent 51%
+        // );
         background-image: linear-gradient(
             180deg,
-            var(--links-color) 57%,
-            transparent 51%
+            var(--nav-bg) 67%,
+            transparent 67%
         );
     }
 }
 
 @media (min-width: 821px) {
     .contact {
-        // background-image: linear-gradient(45deg, var(--links-color) 51%, transparent 51%);
+        // background-image: linear-gradient(
+        //     110deg,
+        //     var(--links-color) 56%,
+        //     transparent 51%
+        // );
+        // background-image: linear-gradient(
+        //     110deg,
+        //     var(--links-color) 61%,
+        //     transparent 61%
+        // );
         background-image: linear-gradient(
-            110deg,
-            var(--links-color) 56%,
-            transparent 51%
-        );
-        background-image: linear-gradient(
-            110deg,
-            var(--links-color) 61%,
-            transparent 61%
+            101deg,
+            var(--nav-bg) 63%,
+            transparent 50%
         );
 
         &__question {
@@ -101,11 +119,11 @@
 @media (min-width: 1058px) {
     .contact {
         // background-image: linear-gradient(45deg, var(--links-color) 51%, transparent 51%);
-        background-image: linear-gradient(
-            135deg,
-            var(--links-color) 56%,
-            transparent 56%
-        );
+        // background-image: linear-gradient(
+        //     135deg,
+        //     var(--links-color) 56%,
+        //     transparent 56%
+        // );
     }
 }
 
