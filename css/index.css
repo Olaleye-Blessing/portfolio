@@ -383,8 +383,8 @@ img {
   border: 0.2rem inset var(--links-color);
   border-left: transparent;
   border-right: transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(57%, var(--nav-bg)), color-stop(57%, transparent));
-  background-image: linear-gradient(180deg, var(--nav-bg) 57%, transparent 57%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, var(--nav-bg)), color-stop(45%, transparent));
+  background-image: linear-gradient(180deg, var(--nav-bg) 50%, transparent 45%);
 }
 
 .contact p {
@@ -423,8 +423,8 @@ img {
 
 @media (max-width: 467px) {
   .contact {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(67%, var(--nav-bg)), color-stop(67%, transparent));
-    background-image: linear-gradient(180deg, var(--nav-bg) 67%, transparent 67%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(53%, var(--nav-bg)), color-stop(50%, transparent));
+    background-image: linear-gradient(180deg, var(--nav-bg) 53%, transparent 50%);
   }
 }
 
@@ -434,6 +434,12 @@ img {
   }
   .contact__question {
     padding-bottom: 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  .contact {
+    background-image: linear-gradient(100deg, var(--nav-bg) 51%, transparent 31%);
   }
 }
 
@@ -452,6 +458,11 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    display: flex;
+    -ms-flex-flow: column wrap;
+        flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
     gap: 2.5rem 6rem;
   }
   .contact__link li a {

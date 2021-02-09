@@ -4,10 +4,15 @@
     border: 0.2rem inset var(--links-color);
     border-left: transparent;
     border-right: transparent;
+    // background-image: linear-gradient(
+    //     180deg,
+    //     var(--nav-bg) 57%,
+    //     transparent 57%
+    // );
     background-image: linear-gradient(
         180deg,
-        var(--nav-bg) 57%,
-        transparent 57%
+        var(--nav-bg) 50%,
+        transparent 45%
     );
 
     p {
@@ -55,10 +60,15 @@
 
 @media (max-width: 467px) {
     .contact {
+        // background-image: linear-gradient(
+        //     180deg,
+        //     var(--nav-bg) 67%,
+        //     transparent 67%
+        // );
         background-image: linear-gradient(
             180deg,
-            var(--nav-bg) 67%,
-            transparent 67%
+            var(--nav-bg) 53%,
+            transparent 50%
         );
     }
 }
@@ -94,14 +104,13 @@
     }
 }
 
-@media (min-width: 1058px) {
+@media (min-width: 1400px) {
     .contact {
-        // background-image: linear-gradient(45deg, var(--links-color) 51%, transparent 51%);
-        // background-image: linear-gradient(
-        //     135deg,
-        //     var(--links-color) 56%,
-        //     transparent 56%
-        // );
+        background-image: linear-gradient(
+            100deg,
+            var(--nav-bg) 51%,
+            transparent 31%
+        );
     }
 }
 
@@ -147,6 +156,7 @@
             // flex-flow: row wrap;
             // display: none;
             @include flex(row, center);
+            @include flex(column, center);
             gap: 2.5rem 6rem;
             li {
                 // font-size: 3rem;
