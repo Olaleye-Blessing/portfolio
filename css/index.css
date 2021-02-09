@@ -327,6 +327,10 @@ img {
   margin-bottom: 1.5rem;
 }
 
+.heading__link {
+  margin-top: 3rem;
+}
+
 .heading__link > a:first-child {
   margin-right: 1.5rem;
   margin-bottom: 3rem;

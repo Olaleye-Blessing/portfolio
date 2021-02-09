@@ -27,13 +27,13 @@
     // }
 
     &__link {
-        //     // margin-top: 2rem;
+        margin-top: 3rem;
         //     margin-top: 3rem;
         //     font-size: 1.7rem;
         //     @include flex(row, flex-start);
         //     gap: 3rem;
 
-            & > a:first-child {
+        & > a:first-child {
             margin-right: 1.5rem;
             margin-bottom: 3rem;
         }
