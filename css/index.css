@@ -34,6 +34,13 @@
 }
 
 @font-face {
+  font-family: "loraregular";
+  src: url("../fonts/lora-regular-webfont.woff2") format("woff2"), url("../fonts/lora-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "latolight";
   src: url("../fonts/lato-light-webfont.woff2") format("woff2"), url("../fonts/lato-light-webfont.woff") format("woff");
   font-weight: normal;
@@ -158,7 +165,7 @@ body {
   font-size: 1.6rem;
   color: var(--main-color);
   background-color: var(--main-bg);
-  font-family: "latolight", "proza_librelight", "ralewaylight", "source_sans_prolight", sans-serif;
+  font-family: "latolight", "ralewaylight", "loraregular", "proza_librelight", "source_sans_prolight", sans-serif;
   font-weight: normal;
   font-style: normal;
 }
@@ -174,7 +181,9 @@ h6 {
   font-style: normal;
 }
 
-a, button, mark {
+a,
+button,
+mark {
   font-family: "poppinsregular";
   font-weight: normal;
   font-style: normal;
