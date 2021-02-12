@@ -1,3 +1,99 @@
+@font-face {
+    font-family: "playfair_displaybold";
+    src: url("../fonts/playfairdisplay-bold-webfont.woff2") format("woff2"),
+        url("../fonts/playfairdisplay-bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "poppinsextralight";
+    src: url("../fonts/poppins-extralight-webfont.woff2") format("woff2"),
+        url("../fonts/poppins-extralight-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "poppinslight";
+    src: url("../fonts/poppins-light-webfont.woff2") format("woff2"),
+        url("../fonts/poppins-light-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "poppinsmedium";
+    src: url("../fonts/poppins-medium-webfont.woff2") format("woff2"),
+        url("../fonts/poppins-medium-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "poppinsregular";
+    src: url("../fonts/poppins-regular-webfont.woff2") format("woff2"),
+        url("../fonts/poppins-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "latolight";
+    src: url("../fonts/lato-light-webfont.woff2") format("woff2"),
+        url("../fonts/lato-light-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "latomedium";
+    src: url("../fonts/lato-medium-webfont.woff2") format("woff2"),
+        url("../fonts/lato-medium-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "proza_librelight";
+    src: url("../fonts/prozalibre-light-webfont.woff2") format("woff2"),
+        url("../fonts/prozalibre-light-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "proza_libremedium";
+    src: url("../fonts/prozalibre-medium-webfont.woff2") format("woff2"),
+        url("../fonts/prozalibre-medium-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ralewaylight";
+    src: url("../fonts/raleway-light-webfont.woff2") format("woff2"),
+        url("../fonts/raleway-light-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ralewaymedium";
+    src: url("../fonts/raleway-medium-webfont.woff2") format("woff2"),
+        url("../fonts/raleway-medium-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "source_sans_prolight";
+    src: url("../fonts/sourcesanspro-light-webfont.woff2") format("woff2"),
+        url("../fonts/sourcesanspro-light-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --nav-bg: #1d1d1d;
     --main-bg: #000;
@@ -59,25 +155,52 @@ html {
     transition: background 0.3s linear, color 0.3s linear;
 }
 
+::selection {
+    background-color: var(--main-color);
+    color: var(--main-bg);
+}
+
 body {
     line-height: 1.5;
     font-size: 1.6rem;
-    // font-size: 1.8rem;
     color: var(--main-color);
     background-color: var(--main-bg);
-    // font-family: 'EB Garamond', serif;
-    // font-family: 'Poppins', sans-serif;
-    font-family: 'Lora', serif;
+    // font-family: ;
+    font-family: "latolight", "proza_librelight", "ralewaylight", "source_sans_prolight", sans-serif;
+    font-weight: normal;
+    font-style: normal;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    // font-family: 'Playfair Display', serif;
+    font-family: "playfair_displaybold", serif;
+    font-weight: normal;
+    font-style: normal;
 }
 
-a, button {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+a, button, mark {
+    // font-family: "poppinsmedium";
+    font-family: "poppinsregular";
+    font-weight: normal;
+    font-style: normal;  
 }
+
+.updating {
+    font-family: "poppinsextralight";
+    font-weight: normal;
+    font-style: normal;
+}
+
+// a,
+// button {
+//     // font-family: 'Poppins', sans-serif;
+//     // font-weight: 400;
+// }
 
 p {
     font-size: 2rem;
@@ -106,9 +229,10 @@ main {
             padding-top: 8rem;
         }
 
-        & > p, & header p {
+        & > p,
+        & header p {
             // background-color: red;
-        //     font-weight: bold;
+            //     font-weight: bold;
             padding: 0.7rem 1.5rem;
             padding-left: 0;
             font-size: 2rem;
@@ -155,7 +279,6 @@ a {
     &:hover {
         color: var(--nav-link-color);
     }
-    
 }
 
 ul {
@@ -166,4 +289,3 @@ svg,
 img {
     max-width: 100%;
 }
-
