@@ -4,14 +4,9 @@
     border: 0.2rem inset var(--links-color);
     border-left: transparent;
     border-right: transparent;
-    // background-image: linear-gradient(
-    //     180deg,
-    //     var(--nav-bg) 57%,
-    //     transparent 57%
-    // );
     background-image: linear-gradient(
         180deg,
-        var(--nav-bg) 50%,
+        var(--nav-bg) 57%,
         transparent 45%
     );
 
@@ -35,16 +30,18 @@
         margin-top: 5rem;
 
         li {
-            font-size: 2rem;
             text-align: center;
             // background-color: red;
-            margin-bottom: 3rem;
+            margin-bottom: 4rem;
+            &:last-child {
+                // background-color: purple;
+                margin-bottom: 2.5rem;
+            }
 
             a {
                 // background-color: lightgreen;
                 span {
                     // background-color: yellow;
-                    // flex: 0 0 2rem;
                     display: inline-block;
                     margin-right: 1.2rem;
                 }
@@ -61,14 +58,9 @@
 
 @media (max-width: 467px) {
     .contact {
-        // background-image: linear-gradient(
-        //     180deg,
-        //     var(--nav-bg) 67%,
-        //     transparent 67%
-        // );
         background-image: linear-gradient(
             180deg,
-            var(--nav-bg) 53%,
+            var(--nav-bg) 60%,
             transparent 50%
         );
     }
@@ -76,117 +68,49 @@
 
 @media (min-width: 821px) {
     .contact {
+        // background-image: linear-gradient(
+        //     100deg,
+        //     var(--nav-bg) 59%,
+        //     transparent 50.5%
+        // );
+
         background-image: linear-gradient(
             100deg,
-            var(--nav-bg) 61%,
-            transparent 59.5%
+            var(--nav-bg) calc(100% - 45vw),
+            transparent 20.5%
         );
 
         &__question {
             padding-bottom: 0;
         }
-        .width {
-            // display: flex;
-            // background-color: green;
-            // background-color: red;
-            // display: flex;
-            // align-items: center;
-            // justify-content: space-between;
-        }
-
-        &__link {
-            // flex: 1;
-            // max-width: 40rem;
-            // margin-top: 0;
-            // flex-flow: column wrap;
-            // margin-left: auto;
-            // background-color: red;
-        }
     }
 }
 
-@media (min-width: 1400px) {
-    .contact {
-        background-image: linear-gradient(
-            100deg,
-            var(--nav-bg) 51%,
-            transparent 31%
-        );
-    }
-}
+// @media (min-width: 1400px) {
+//     .contact {
+//         background-image: linear-gradient(
+//             100deg,
+//             var(--nav-bg) 51%,
+//             transparent 31%
+//         );
+//     }
+// }
 
 @supports (display: flex) {
     .contact {
-        // // padding-top: 4.5rem;
-        // // padding-bottom: 4.5rem;
-        // padding-top: 9.5rem;
-        // padding-bottom: 9.5rem;
-        // // border: 0.2rem inset red;
-        // border: 0.2rem inset var(--links-color);
-        // border-left: transparent;
-        // border-right: transparent;
-        // // background-color: var(--main-color);
-        // // color: var(--main-bg);
-
-        .width {
-            // background-color: blue;
-        }
-
-        p {
-            // font-size: 4.5rem;
-            // // background-color: blue;
-            // padding: 0;
-            // margin: 0;
-        }
-
-        &__question {
-            // list-style: disc;
-            // padding-left: 2rem;
-            // font-size: 2.2rem;
-            // font-weight: normal;
-        }
-
         &__link {
-            // background-color: yellow;
-            // margin-top: 3rem;
-            // margin-top: 5rem;
-            // display: flex;
-            // align-items: center;
-            // justify-content: flex-start;
-            // justify-content: center;
-            // flex-flow: row wrap;
-            // display: none;
             @include flex(row, center);
             @include flex(column, center);
-            gap: 4.5rem 6rem;
+            // gap: 3.5rem 6rem;
             li {
-                // font-size: 3rem;
-                // text-align: center;
-                margin-bottom: 0;
                 a {
-                    // display: inline-block;
-                    // display: block;
-                    // display: flex;
-                    // // display: inline-flex;
-                    // // display: inline-flex;
-                    // align-items: center;
-                    // justify-content: center;
                     @include flex(row, center);
                     gap: 0rem;
-                    // font-size: 3rem;
-                    span {
-                        // flex: 0 0 2rem;
-                        // display: inline-block;
-                        // margin-right: 1.2rem;
-                    }
 
                     figure {
-                        // display: inline-block;
                         width: auto;
                         height: auto;
                         flex: 0 0 2rem;
-                        // width: 2rem;
-                        // height: 2rem;
                     }
                 }
             }
@@ -202,29 +126,15 @@
 
             &__link {
                 flex: 1;
-                // max-width: 40rem;
                 max-width: 43rem;
-                // max-width: auto;
-                // background-color: green;
                 margin-top: 0;
                 flex-flow: column wrap;
                 margin-left: auto;
 
                 li, a, span {
-                    // font-size: calc(1.5vw) !important;
-                    // font-size: clamp(1.5rem, 2vw, 1.7rem);
+                    font-size: clamp(1.5rem, 2vw, 1.7rem);
                 }
             }
         }
     }
-
-    // @media (min-width: 1058px) {
-    //     .contact {
-    //         background-image: linear-gradient(
-    //             135deg,
-    //             var(--links-color) 51%,
-    //             transparent 51%
-    //         );
-    //     }
-    // }
 }

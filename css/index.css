@@ -503,8 +503,8 @@ img {
   border: 0.2rem inset var(--links-color);
   border-left: transparent;
   border-right: transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, var(--nav-bg)), color-stop(45%, transparent));
-  background-image: linear-gradient(180deg, var(--nav-bg) 50%, transparent 45%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(57%, var(--nav-bg)), color-stop(45%, transparent));
+  background-image: linear-gradient(180deg, var(--nav-bg) 57%, transparent 45%);
 }
 
 .contact p {
@@ -526,9 +526,12 @@ img {
 }
 
 .contact__link li {
-  font-size: 2rem;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
+}
+
+.contact__link li:last-child {
+  margin-bottom: 2.5rem;
 }
 
 .contact__link li a span {
@@ -544,23 +547,17 @@ img {
 
 @media (max-width: 467px) {
   .contact {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(53%, var(--nav-bg)), color-stop(50%, transparent));
-    background-image: linear-gradient(180deg, var(--nav-bg) 53%, transparent 50%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, var(--nav-bg)), color-stop(50%, transparent));
+    background-image: linear-gradient(180deg, var(--nav-bg) 60%, transparent 50%);
   }
 }
 
 @media (min-width: 821px) {
   .contact {
-    background-image: linear-gradient(100deg, var(--nav-bg) 61%, transparent 59.5%);
+    background-image: linear-gradient(100deg, var(--nav-bg) calc(100% - 45vw), transparent 20.5%);
   }
   .contact__question {
     padding-bottom: 0;
-  }
-}
-
-@media (min-width: 1400px) {
-  .contact {
-    background-image: linear-gradient(100deg, var(--nav-bg) 51%, transparent 31%);
   }
 }
 
@@ -584,10 +581,6 @@ img {
         flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    gap: 4.5rem 6rem;
-  }
-  .contact__link li {
-    margin-bottom: 0;
   }
   .contact__link li a {
     display: -webkit-box;
@@ -639,6 +632,9 @@ img {
           -ms-flex-flow: column wrap;
               flex-flow: column wrap;
       margin-left: auto;
+    }
+    .contact__link li, .contact__link a, .contact__link span {
+      font-size: clamp(1.5rem, 2vw, 1.7rem);
     }
   }
 }
