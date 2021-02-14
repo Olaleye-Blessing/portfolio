@@ -90,7 +90,7 @@
 }
 
 :root {
-  --nav-bg: #1d1d1d;
+  --nav-bg: rgba(0, 0, 0, 0.95);
   --main-bg: #000;
   --main-color: #fff;
   --nav-link-color: #d22;
@@ -107,8 +107,7 @@
 
 :root.light {
   --card-bg: rgba(225, 225, 225, 0.6);
-  --nav-bg: #ededed;
-  --nav-bg: #e1e1e1;
+  --nav-bg: rgba(255, 255, 255, 0.95);
   --main-bg: #fff;
   --main-color: #000;
   --nav-link-hover: #000c;
