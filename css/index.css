@@ -526,8 +526,9 @@ img {
 }
 
 .contact__link li {
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
+  margin-bottom: 3rem;
 }
 
 .contact__link li a span {
@@ -583,7 +584,10 @@ img {
         flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    gap: 2.5rem 6rem;
+    gap: 4.5rem 6rem;
+  }
+  .contact__link li {
+    margin-bottom: 0;
   }
   .contact__link li a {
     display: -webkit-box;
@@ -600,7 +604,6 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 0rem;
-    font-size: 3rem;
   }
   .contact__link li a figure {
     width: auto;
@@ -636,9 +639,6 @@ img {
           -ms-flex-flow: column wrap;
               flex-flow: column wrap;
       margin-left: auto;
-    }
-    .contact__link li, .contact__link a, .contact__link span {
-      font-size: clamp(1.5rem, 2vw, 1.7rem);
     }
   }
 }
