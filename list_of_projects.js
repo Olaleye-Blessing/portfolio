@@ -19,6 +19,7 @@ const allProjects = [
         summary:
             "Shows current weather of a place and forecasts for the next 5 days",
         api: true,
+        updating: 'yes'
     },
     {
         name: "Random Quiz",
